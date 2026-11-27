@@ -89,7 +89,7 @@ function submitRanking(payload) {
   const feedback = String(payload.feedback || '').trim();
 
   if (!Number.isInteger(group) || group < 1 || group > APP.groupCount) throw new Error('Nhóm không hợp lệ.');
-  if (!/^\\d{8}$/.test(studentId)) throw new Error('MSSV phải gồm đúng 8 chữ số.');
+  if (!/^\d{8}$/.test(studentId)) throw new Error('MSSV phải gồm đúng 8 chữ số.');
   if (ranking.length !== APP.groupCount - 1) throw new Error('Phải xếp hạng đủ 9 nhóm.');
   const expected = Array.from({ length: APP.groupCount }, (_, i) => i + 1).filter(n => n !== group);
   if (ranking.some(n => !Number.isInteger(n) || !expected.includes(n)) || new Set(ranking).size !== APP.groupCount - 1) {
