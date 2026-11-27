@@ -34,7 +34,7 @@ Kết quả tổng hợp:
 - Chỉ công bố thứ hạng chính thức khi đã nhận đủ 9 phiếu hợp lệ; trước đó kết quả chỉ là tạm thời.
 
 ## Cấu trúc tài liệu
-- `assignment/`: đề bài Word.
+- `assignment/`: đề bài (bản Markdown trong repository; có thể xuất sang Word khi cần).
 - `peer-ranking/`: mã nguồn Apps Script và giao diện xếp hạng.
 - `docs/`: hướng dẫn triển khai và vận hành.
 
